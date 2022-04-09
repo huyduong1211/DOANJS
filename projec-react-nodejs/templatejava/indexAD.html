@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./indexAD.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-name-inf">
+            <ul>
+                <li><a>Sản phẩm</a></li>
+                <li><a>Loại sản phẩm</a></li>
+                <li><a>Đơn hàng</a></li>
+                <li><a>Tài khoản</a></li>
+                <li><a>Thống kê</a></li>
+
+            </ul>
+            <div class="if-log">
+                <img class="img-ad"
+                    src="https://img.icons8.com/external-flaticons-flat-flat-icons/344/external-user-web-flaticons-flat-flat-icons-2.png"
+                    onclick="ocllog()" />
+                <h5>xin chao: trinh quoc viet </h5>
+            </div>
+
+        </div>
+        <div class="pop-log" id="log">
+            <div class="wrap-log">
+                <button class="btn-op">Dang xuat</button>
+                <button class="btn-op" onclick="close_log()">Dong</button>
+            </div>
+        </div>
+        <h1 class="title-op">Danh sach san pham</h1>
+        <div class="cover-page-ad">
+            
+            <table class="tb-fullview">
+                <thead>
+                    <th>Hình ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá bán</th>
+                    <th>Trạng thái bán</th>
+                    <th>Số lượng tồn</th>
+                    <th>loại sản phẩm</th>
+                    <th>Thao tác</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../public/assets/images/products/BannerStatic3.jpg" /></td>
+                        <td>
+                            <p>Ten san pham</p>
+                        </td>
+                        <td>
+                            <p>Ten san pham</p>
+                        </td>
+                        <td>
+                            <p>Ten san pham</p>
+                        </td>
+                        <td>
+                            <p>Ten san pham</p>
+                        </td>
+                        <td>
+                            <p>Ten san pham</p>
+                        </td>
+                        <td><button class="rm-bt" >Sua</button> <button class="cg-bt">Thay doi trang thai</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../public/assets/images/products/BannerStatic3.jpg" /></td>
+                        <td>
+                            <p>Ten san pham</p>
+                        </td>
+                        <td>
+                            <p>Ten san pham</p>
+                        </td>
+                        <td>
+                            <p>Ten san pham</p>
+                        </td>
+                        <td>
+                            <p>Ten san pham</p>
+                        </td>
+                        <td>
+                            <p>Ten san pham</p>
+                        </td>
+                        <td><button class="rm-bt" >Sua</button> <button class="cg-bt">Thay doi trang thai</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+         var pop = document.getElementById("log");
+        function ocllog() {
+            pop.style.display="block";    
+        }
+        function close_log(){
+            pop.style.display="none";
+        }
+    </script>
+
+</body>
+
+</html>

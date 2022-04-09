@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "start",
+			"path": "projec-react-nodejs/",
+			"problemMatcher": [
+				"$jshint"
+			],
+			"label": "npm: start - projec-react-nodejs",
+			"detail": "react-scripts start"
+		}
+	]
+}
